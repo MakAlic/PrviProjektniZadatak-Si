@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kupovina Karata - FK Željezničar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="history.html">Historija Kluba</a></li>
+                <li><a href="gallery.html">Postava</a></li>
+                <li><a href="tickets.html">Kupovina Karata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="naslov">Kupovina Karata</h1>
+        <form class="ticket-form">
+            <div class="form-group">
+                <label for="match">Odaberi utakmicu:</label>
+                <select id="match" name="match">
+                    <option value="zeljeznicar-vs-sarajevo">Željezničar vs Sarajevo</option>
+                    <option value="zeljeznicar-vs-borac">Željezničar vs Borac</option>
+                    <option value="zeljeznicar-vs-velez">Željezničar vs Velež</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ticket-type">Tip karte:</label>
+                <select id="ticket-type" name="ticket-type">
+                    <option value="tribina-sjever">Tribina Sjever</option>
+                    <option value="tribina-istok">Tribina Istok</option>
+                    <option value="tribina-jug">Tribina Jug</option>
+                    <option value="tribina-zapad">Tribina Zapad</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Broj karata:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Ime i Prezime:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Kupi Kartu</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="index.html" class="footer-link">Nazad na Početnu</a>
+    </footer>
+</body>
+</html>
